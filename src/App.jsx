@@ -17,10 +17,11 @@ import { BookingDetail } from "./pages/BookingDetail";
 
 axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 
+axios.defaults.withCredentials = true;
+
 // axios.defaults.baseURL = "http://localhost:4000";
 
 // untuk cookie
-axios.defaults.withCredentials = true;
 
 // console.log(import.meta.env.VITE_API_BASE_URL);
 
