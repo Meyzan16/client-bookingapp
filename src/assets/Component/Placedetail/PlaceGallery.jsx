@@ -21,14 +21,14 @@ export const PlaceGallery = ({place}) => {
                     <div className="flex flex-col md:flex-row gap-2">
                         <div className="flex flex-1 flex-col gap-2">
                             <div className="flex flex-1 flex-col">
-                                <img className="object-cover h-full md:h-96"     src={'http://localhost:4000/uploads/'+place.photos[0]} />
+                                <Image className="object-cover h-full md:h-96"     src={place.photos[0]} />
                             </div>
                             <div className=" md:flex flex-1 flex-row gap-2">
                                 <div className="flex flex-1 flex-col">
-                                    <img className="object-cover h-full md:h-64"     src={'http://localhost:4000/uploads/'+place.photos[1]} />
+                                    <Image className="object-cover h-full md:h-64"     src={place.photos[1]} />
                                 </div>
                                 <div className=" md:flex flex-1 flex-col">
-                                    <img className="object-cover h-full md:h-64"      src={'http://localhost:4000/uploads/'+place.photos[2]} />
+                                    <Image className="object-cover h-full md:h-64"      src={place.photos[2]} />
                                 </div>
                             </div>
                         </div>
@@ -38,14 +38,14 @@ export const PlaceGallery = ({place}) => {
                         <div className="flex flex-1 flex-col gap-2">
                             <div className="flex flex-1 flex-col">
                        
-                                <img className="object-cover h-full md:h-96"     src={'http://localhost:4000/uploads/'+place.photos[3]} />
+                                <Image className="object-cover h-full md:h-96"     src={place.photos[3]} />
                             </div>
                             <div className=" md:flex flex-1 flex-row gap-2">
                                 <div className="flex flex-1 flex-col">
-                                    <img className="object-cover h-full md:h-64"     src={'http://localhost:4000/uploads/'+place.photos[4]} />
+                                    <Image className="object-cover h-full md:h-64"     src={place.photos[4]} />
                                 </div>
                                 <div className=" md:flex flex-1 flex-col">
-                                    <img className="object-cover h-full md:h-64"      src={'http://localhost:4000/uploads/'+place.photos[4]} />
+                                    <Image className="object-cover h-full md:h-64"      src={place.photos[4]} />
                                 </div>
                             </div>
                         </div>
