@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Perkslabels } from './Perkslabels';
-import { PhotosUploader } from './PhotosUploader';
+// import { PhotosUploader } from './PhotosUploader';
 import { Link, Navigate, useParams } from 'react-router-dom';
 // import Perks from '../assets/data/Perks.Js';
 import { useState } from 'react';
@@ -16,7 +16,7 @@ export const PlacesForm = () => {
      // const [getPerks, setPerks] = useState(Perks);
      const[title,setTitle] = useState('');
      const[address,setaddress] = useState('');
-     const[addedPhoto,setaddedPhoto] = useState([]);
+    //  const[addedPhoto,setaddedPhoto] = useState([]);
      
      const[description,setdescription] = useState('');
      const[perks,setperks] = useState([]);
@@ -39,7 +39,7 @@ export const PlacesForm = () => {
             setTitle(data.title);
             setaddress(data.address);
             setaddress(data.address);
-            setaddedPhoto(data.photos);
+            // setaddedPhoto(data.photos);
             setdescription(data.description);
             setperks(data.perks);
             setextraInfo(data.extraInfo);
@@ -77,9 +77,10 @@ export const PlacesForm = () => {
     {
         ev.preventDefault();
 
+        // addedPhoto
         const placeData = {
                 title, 
-                address, addedPhoto, description, perks,
+                address, description, perks,
                 extraInfo, checkIn, checkOut, 
                 maxGuests, price
         };
@@ -128,11 +129,11 @@ export const PlacesForm = () => {
                                 <input type="text" value={address} onChange={ev => setaddress(ev.target.value)}  placeholder='address'/>
                             </div>
 
-                            <div>
-                                {preInput('Photos', 'Address to this place')}
+                            {/* <div>
+                                {preInput('Photos', 'Address to this place')} */}
                                 {/* disini kasih nilai parameter mmasing masing */}
-                                <PhotosUploader addedPhoto={addedPhoto} onChange={setaddedPhoto}/>
-                            </div>     
+                                {/* <PhotosUploader addedPhoto={addedPhoto} onChange={setaddedPhoto}/> */}
+                            {/* </div>      */}
 
                             <div>
                                 {preInput('Description', 'desription of the place')}
